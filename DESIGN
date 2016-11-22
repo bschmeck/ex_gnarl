@@ -1,0 +1,16 @@
+An actual person is one User.  A user is just a name + email address.
+
+Each two person bet is called a XXX.  It has 2 players and many rounds.
+
+A round has many weeks and one season.
+
+
+A season has many games (e.g. the 2015-2016 NFL Season.)
+
+A pick belongs to one game, has one picked team, an outcome (win/loss/push) and can be locked and anti-locked.
+
+A game has two teams and belongs to a week.
+
+A team belongs to a franchise and a league season.
+
+The goal is to separate real world NFL things (season, games, scores) from the GNARL concepts (week, picks, locks, etc.)  Terminology will be important to make this distinction clear and easy to reason about.
