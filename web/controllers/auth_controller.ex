@@ -20,9 +20,7 @@ defmodule ExGnarl.AuthController do
     end
   end
 
-  defp find_or_create(:google, info) do
-    %{email: email} = info
-
+  defp find_or_create(:google, %{email: email} = info) do
     query = from u in User, where: u.email == ^email
     user = case Repo.one(query) do
              %User{} = user -> user
