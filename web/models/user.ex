@@ -3,8 +3,6 @@ defmodule ExGnarl.User do
   use Ecto.Schema
   import Ecto.Changeset
 
-  alias Ueberauth.Auth
-
   schema "users" do
     field :email, :string
     field :name, :string
